@@ -4,7 +4,7 @@ type: software
 title: "compare-migration: SysML v1.7 to SysML v2 migration success auditor"
 version: 1.0.0
 date-released: 2026-11-01
-doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.23587762
 repository-code: "https://github.com/MB-DIREC/compare-migration"
 license: MIT
 authors:
