@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "compare-migration: SysML v1.7 to SysML v2 migration success auditor"
+version: 1.0.0
+date-released: 2026-11-01
+doi: 10.5281/zenodo.XXXXXXX
+repository-code: "https://github.com/MB-DIREC/compare-migration"
+license: MIT
+authors:
+  - family-names: "Matthews"
+    given-names: "Evan"
+    orcid: "https://orcid.org/0009-0005-2265-0754"
+    affiliation: "The George Washington University"
+keywords:
+  - SysML
+  - SysML v2
+  - MBSE
+  - model migration
+  - CATIA Magic
+abstract: >-
+  Audits a SysML 1.7 to SysML v2 migration by comparing the exported v1.7
+  element inventory, the migration plugin's not-migrated report, and the
+  SysML v2 source text. Produces an Excel workbook of confirmed migrations,
+  missed migrations, and per-metatype success rates.
+  Supporting software for the doctoral praxis "Metamodel Scope Using Model-Based Decision on Intended-Use & Requirements Engineering Categorization Tool (MB-DIRECT)".

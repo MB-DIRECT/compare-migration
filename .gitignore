@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Microsoft Office lock files
+~$*.xlsx
+~$*.docx
+~$*.pptx
+
+# OS metadata
+Thumbs.db
+desktop.ini
+.DS_Store
+*.lnk
+*.log
+
+# Private working notes, never uploaded
+RELEASE_CHECKLIST.md
+
+# Smoke-test outputs (the expected_* files are tracked; fresh runs are not)
+examples/AllElements_1_7_MigrationComparison.xlsx

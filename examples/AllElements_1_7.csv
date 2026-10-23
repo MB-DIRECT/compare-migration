@@ -1,0 +1,45 @@
+Element MetaType,Element Name,Qualified Name,Element ID,Kind,Owner Qualified Name,Applied Stereotypes
+Package,Homegrown_,Homegrown_,_2024x_3_63f0215_1784284849468_779009_4000,Element,Model,
+Package,Homegrown_Example1,Homegrown_::Homegrown_Example1,_2024x_3_63f0215_1784284216005_606458_3629,Element,Homegrown_,
+Block,Homegrown_Block,Homegrown_::Homegrown_Example1::Homegrown_Block,_2024x_3_63f0215_1784284234665_578346_3633,Element,Homegrown_::Homegrown_Example1,Block
+Proxy Port,p1,Homegrown_::Homegrown_Example1::Homegrown_Block::p1,_2024x_3_63f0215_1784284265236_496882_3723,Element,Homegrown_::Homegrown_Example1::Homegrown_Block,ProxyPort
+Part Property,homegrown_Block2,Homegrown_::Homegrown_Example1::Homegrown_Block::homegrown_Block2,_2024x_3_63f0215_1784284286730_412221_3762,Element,Homegrown_::Homegrown_Example1::Homegrown_Block,PartProperty
+Value Property,value1,Homegrown_::Homegrown_Example1::Homegrown_Block::value1,_2024x_3_63f0215_1784284460212_253078_3995,Element,Homegrown_::Homegrown_Example1::Homegrown_Block,ValueProperty
+Block,Homegrown_Block2,Homegrown_::Homegrown_Example1::Homegrown_Block2,_2024x_3_63f0215_1784284262194_675498_3692,Element,Homegrown_::Homegrown_Example1,Block
+Proxy Port,p1,Homegrown_::Homegrown_Example1::Homegrown_Block2::p1,_2024x_3_63f0215_1784284280900_263786_3741,Element,Homegrown_::Homegrown_Example1::Homegrown_Block2,ProxyPort
+Association,,Homegrown_::Homegrown_Example1::,_2024x_3_63f0215_1784284286730_91874_3761,Element,Homegrown_::Homegrown_Example1,
+Property,,Homegrown_::Homegrown_Example1::::,_2024x_3_63f0215_1784284286730_857360_3763,Element,Homegrown_::Homegrown_Example1::,
+Signal,Homegrown_signal,Homegrown_::Homegrown_Example1::Homegrown_signal,_2024x_3_63f0215_1784284314522_264673_3795,Element,Homegrown_::Homegrown_Example1,
+Diagram,Homegrown_Example1,Homegrown_::Homegrown_Example1::Homegrown_Example1,_2024x_3_63f0215_1784284257147_394270_3634,Diagram,Homegrown_::Homegrown_Example1,DiagramInfo
+String Tagged Value,,,_2024x_3_63f0215_1784284257147_394270_3634_application_be00301_1073306188629_537791_2,Element,Homegrown_::Homegrown_Example1::Homegrown_Example1,
+String Tagged Value,,,_2024x_3_63f0215_1784284257147_394270_3634_application_be00301_1073394345322_922552_1,Element,Homegrown_::Homegrown_Example1::Homegrown_Example1,
+String Tagged Value,,,_2024x_3_63f0215_1784284257147_394270_3634_application_be00301_1077726770128_871366_1,Element,Homegrown_::Homegrown_Example1::Homegrown_Example1,
+String Tagged Value,,,_2024x_3_63f0215_1784284257147_394270_3634_application_16_8beta_8ca0285_1257244649124_794756_344,Element,Homegrown_::Homegrown_Example1::Homegrown_Example1,
+Package,Homegrown_Example3,Homegrown_::Homegrown_Example3,_2024x_3_63f0215_1784284225793_363190_3631,Element,Homegrown_,
+Value Type,Homegrown_valueType,Homegrown_::Homegrown_Example3::Homegrown_valueType,_2024x_3_63f0215_1784284309714_612206_3774,Element,Homegrown_::Homegrown_Example3,ValueType
+Package,Homegrown_Example2,Homegrown_::Homegrown_Example2,_2024x_3_63f0215_1784284225569_244227_3630,Element,Homegrown_,
+Activity,Homegrown_Example2,Homegrown_::Homegrown_Example2::Homegrown_Example2,_2024x_3_63f0215_1784284340743_519051_3814,Element,Homegrown_::Homegrown_Example2,
+Allocated Activity Partition,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284361632_215137_3842,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,AllocateActivityPartition
+Allocated Activity Partition,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284361642_752693_3845,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,AllocateActivityPartition
+Object Flow,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284377842_630201_3932,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Literal Unlimited Natural,,Homegrown_::Homegrown_Example2::Homegrown_Example2::::,_2024x_3_63f0215_1784284377843_714443_3933,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::,
+Control Flow,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284386311_279312_3967,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Literal Unlimited Natural,,Homegrown_::Homegrown_Example2::Homegrown_Example2::::,_2024x_3_63f0215_1784284386312_365900_3968,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::,
+Control Flow,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284396172_578710_3977,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Literal Unlimited Natural,,Homegrown_::Homegrown_Example2::Homegrown_Example2::::,_2024x_3_63f0215_1784284396173_189902_3978,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::,
+Control Flow,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284400681_507237_3982,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Literal Unlimited Natural,,Homegrown_::Homegrown_Example2::Homegrown_Example2::::,_2024x_3_63f0215_1784284400681_760349_3983,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::,
+Control Flow,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284407410_958678_3993,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Literal Unlimited Natural,,Homegrown_::Homegrown_Example2::Homegrown_Example2::::,_2024x_3_63f0215_1784284407410_9161_3994,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::,
+Diagram,Homegrown_Example2,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_Example2,_2024x_3_63f0215_1784284340743_195212_3813,Diagram,Homegrown_::Homegrown_Example2::Homegrown_Example2,DiagramInfo
+String Tagged Value,,,_2024x_3_63f0215_1784284340743_195212_3813_application_be00301_1073306188629_537791_2,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_Example2,
+String Tagged Value,,,_2024x_3_63f0215_1784284340743_195212_3813_application_be00301_1073394345322_922552_1,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_Example2,
+String Tagged Value,,,_2024x_3_63f0215_1784284340743_195212_3813_application_be00301_1077726770128_871366_1,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_Example2,
+String Tagged Value,,,_2024x_3_63f0215_1784284340743_195212_3813_application_16_8beta_8ca0285_1257244649124_794756_344,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_Example2,
+Call Behavior Action,Homegrown_cba1,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_cba1,_2024x_3_63f0215_1784284367419_77834_3888,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Output Pin,output,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_cba1::output,_2024x_3_63f0215_1784284374735_813595_3916,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_cba1,
+Call Behavior Action,Homegrown_cba2,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_cba2,_2024x_3_63f0215_1784284369195_804450_3902,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Input Pin,input,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_cba2::input,_2024x_3_63f0215_1784284377845_226603_3934,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2::Homegrown_cba2,
+Initial Node,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284384518_819029_3959,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Merge Node,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284393000_34419_3970,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,
+Activity Final Node,,Homegrown_::Homegrown_Example2::Homegrown_Example2::,_2024x_3_63f0215_1784284404970_4482_3985,Element,Homegrown_::Homegrown_Example2::Homegrown_Example2,

@@ -1,0 +1,91 @@
+## =====================================================================
+## AllElements_Export.vm  --  CATIA Magic / MSOSA Report Wizard template
+## ---------------------------------------------------------------------
+## Exports EVERY element and diagram in the selected report scope
+## (recursively, via ownedElement) as one CSV row per element, in a
+## column style directly comparable to the SysML v2 migration report
+## (MigrationReportOf<project>.xlsx  "Not Migrated Elements" sheet).
+##
+## Output columns:
+##   Element MetaType , Element Name , Qualified Name , Element ID ,
+##   Kind (Element|Diagram) , Owner Qualified Name , Applied Stereotypes
+##
+## Usage in Report Wizard:
+##   1. Report Wizard > New template > Template file = this .vm
+##   2. Set the report file extension to .csv (UTF-8 encoding).
+##   3. Select ONLY your model package(s) as scope -- the same packages
+##      you migrated to SysML v2 (do not include profiles/libraries).
+##   4. Generate, then feed the .csv to compare_migration.py.
+##
+## Notes:
+##   - Real line breaks inside element names are emitted as the literal
+##     token <NL> so every CSV record stays on one physical line.
+##     compare_migration.py normalizes this automatically.
+##   - Every line in this template starts at column 0 on purpose: the
+##     Report Wizard Velocity engine leaks template indentation and
+##     blank lines into the output.
+##   - Elements are de-duplicated by Element ID, so the template works
+##     whether $elements contains only the scope roots or the already-
+##     flattened element set.
+## =====================================================================
+#set($dq = '"')
+#set($seen = {})
+## $nl holds a real line break: the engine swallows the physical newline
+## after a line that ends with a macro call, so each data row must emit
+## its own line break explicitly (the trailing ## comment then eats the
+## physical newline to avoid doubling).
+#set($nl = "
+")
+## --- csv(): quote a field, escape quotes, fold line breaks to <NL> ---
+#macro(csv $s)$dq$s.replace($dq, "$dq$dq").replaceAll("\r\n|\r|\n", "<NL>")$dq#end
+## --- row(): emit one element then recurse into its owned elements ----
+#macro(row $e)
+#set($id = "$!e.getID()")
+#if(!$seen.containsKey($id))
+#set($void = $seen.put($id, 1))
+#set($mt = "$!e.humanType")
+#set($nm = "$!e.name")
+#set($qn = "$!e.qualifiedName")
+#set($own = "")
+#if($e.owner)
+#set($own = "$!e.owner.qualifiedName")
+#end
+#set($kind = "Element")
+#set($ecn = false)
+#set($ecn = $e.eClass().getName())
+#if($ecn == "Diagram")
+#set($kind = "Diagram")
+#end
+#set($stt = "")
+#set($stlist = false)
+#set($stlist = $report.getStereotypes($e))
+#if($stlist)
+#foreach($s in $stlist)
+#if($stt != "")
+#set($stt = "${stt};")
+#end
+#set($stt = "${stt}$!s.name")
+#end
+#end
+#csv($mt),#csv($nm),#csv($qn),#csv($id),#csv($kind),#csv($own),#csv($stt)$nl##
+#foreach($c in $e.ownedElement)
+#row($c)
+#end
+#end
+#end
+## --- header row -------------------------------------------------------
+"Element MetaType","Element Name","Qualified Name","Element ID","Kind","Owner Qualified Name","Applied Stereotypes"
+## --- walk everything reachable from the selected scope ----------------
+#if($elementScope)
+#foreach($r in $elementScope)
+#row($r)
+#end
+#end
+#if($packageScope)
+#foreach($r in $packageScope)
+#row($r)
+#end
+#end
+#foreach($r in $elements)
+#row($r)
+#end
