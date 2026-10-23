@@ -1,6 +1,6 @@
 # compare-migration: SysML v1.7 to SysML v2 migration success auditor
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/1430626406.svg)](https://doi.org/10.5281/zenodo.23587761)
 
 The CATIA Magic / MSOSA 2026x SysML v2 migration plugin reports only what
 failed to migrate. This tool produces the inverse: an Excel workbook that
